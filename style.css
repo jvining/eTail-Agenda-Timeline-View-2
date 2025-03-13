@@ -1,0 +1,68 @@
+
+.chart { 
+    display: grid;
+    border: 2px solid #000;
+    position: relative;
+    overflow: auto;
+	min-width: 100%;
+    border-radius: calc(.75rem - 1px);
+	
+}
+
+//.chart::-webkit-scrollbar {height:1px; width:1px;}
+
+.chart-row {  
+    display: grid; 
+    grid-template-columns: repeat(22, 150px);
+	background:#eee;
+	border-bottom:1px #999 solid;
+}
+
+.chart-period > span {
+	border-bottom:1px #999 solid;
+    font-size: 13px;  
+    align-self: center;  
+    font-weight: bold;  
+    padding: 15px 5px;   
+}
+
+.chart-lines {
+	grid-template-columns: repeat(22, 150px); 
+	position: absolute; 
+	height: 100%;  
+	width: 100%;  
+	background-color: transparent;
+}
+
+.chart-lines > span {
+	display: block;  
+	border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.chart-row-bars { 
+    list-style: none; 
+    display: grid;  
+    grid-template-columns: repeat(45, 75px);
+	padding: 15px 0;  
+    margin: 0;  
+}
+
+.chart-row-bars li {  
+    overflow: hidden;  
+    position: relative;
+    padding: 5px 15px;  
+    overflow: hidden;  
+    position: relative;  
+    cursor: pointer;  
+    border-radius: calc(.75rem - 1px);
+ } 
+ 
+.bg-primary {border-left:8px solid!important; border-color:rgb(0 123 255 / 85%)!important; background:rgb(0 123 255 / 45%)!important;}
+.bg-secondary{border-left:8px solid!important; border-color:rgb(108 117 125 / 85%)!important; background:rgb(108 117 125 / 45%)!important;}
+.bg-success{border-left:8px solid!important; border-color:rgb(40 167 69 / 85%)!important; background:rgb(40 167 69 / 45%)!important;}
+.bg-danger{border-left:8px solid!important; border-color:rgb(220 53 69 / 85%)!important; background:rgb(220 53 69 / 45%)!important;}
+.bg-warning{border-left:8px solid!important; border-color:rgb(255 193 7 / 85%)!important; background:rgb(255 193 7 / 45%)!important;}
+.bg-info{border-left:8px solid!important; border-color:rgb(23 162 184 / 85%)!important; background:rgb(23 162 184 / 45%)!important;}
+.bg-dark{border-left:8px solid!important; border-color:rgb(52 58 64 / 85%)!important; background:rgb(52 58 64 / 45%)!important;}
+ 
+ 
